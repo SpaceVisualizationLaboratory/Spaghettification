@@ -12,7 +12,7 @@ boolean rgb = true;
 boolean ir = false;
 
 float deg = -40; // Start at 15 degrees
-float widthPercentage = 0.1;//width Percentage
+float widthPercentage = 0.05;//width Percentage
 
 void setup() {
   size(1920,1080);
@@ -30,11 +30,10 @@ void setup() {
 void draw() {
   background(0);
 
-  image(kinect.getVideoImage(),0,0,width*widthPercentage,1080);
-  image(kinect.getVideoImage(),400,0,width*widthPercentage,1080);
-  image(kinect.getVideoImage(),800,0,width*widthPercentage,1080);
-  image(kinect.getVideoImage(),1200,0,width*widthPercentage,1080);
-  image(kinect.getVideoImage(),1600,0,width*widthPercentage,1080);
+  image(kinect.getVideoImage(),200,0,width*widthPercentage,1080);
+  image(kinect.getVideoImage(),500,0,width*widthPercentage*2,1080);
+  image(kinect.getVideoImage(),800,0,width*widthPercentage*4,1080);
+  image(kinect.getVideoImage(),1000,0,width*widthPercentage*10,1080);
   //image(kinect.getDepthImage(),640,0);
   fill(255);
   text(" Spaghettify yourself! ",400,1000);
